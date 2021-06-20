@@ -1,7 +1,11 @@
 def factors(number):
     # ==============
     # Your code here
-    
+    list = []
+    for i in range(2, number):
+        if number % i == 0:
+            list.append(i)
+    return list
     # ==============
 
 print(factors(15)) # Should print [3, 5] to the console

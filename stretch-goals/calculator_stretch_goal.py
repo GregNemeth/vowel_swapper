@@ -1,7 +1,19 @@
 def calculator(a, b, operator):
     # ==============
     # Your code here
+    result = 0
+    
 
+    if operator == "+":
+        result = (a + b)
+    elif operator == "-":
+        result = (a - b)
+    elif operator == "*":
+        result = (a * b)
+    else :
+        if operator == "/":
+         result = int(a / b)
+    return bin(result).lstrip('0b')
     # ==============
 
 print(calculator(2, 4, "+")) # Should print 110 to the console
